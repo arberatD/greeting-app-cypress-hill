@@ -24,5 +24,12 @@ jobs:
             - name: Install Cypress
               run: npm install cypress
 
+            - name: Start the server
+              run: npm start
+
+            - name: Wait for Server to start
+              run: sleep 3
+              
+
             - name: Run tests
               run: npm test
