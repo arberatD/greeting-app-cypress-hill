@@ -25,7 +25,7 @@ jobs:
               run: npm install cypress
 
             - name: Start the server
-              run: npm start
+              run: npm start &
 
             - name: Wait for Server to start
               run: sleep 3
